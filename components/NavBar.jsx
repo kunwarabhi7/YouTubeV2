@@ -9,7 +9,7 @@ const NavBar = () => {
       {/* First  */}
         <div className='flex'>
 <GiHamburgerMenu className='text-white mr-6' size={35}/>
-<BsYoutube size={35} className='text-red-600'/>
+<BsYoutube size={35} className='text-red-600 '/>
 <h1 className='font-bold text-3xl text-white'>YouTube <sup className='text-gray-500 text-sm'>IN</sup></h1>
         </div>
         {/* middle div   */}
