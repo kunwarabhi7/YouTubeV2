@@ -5,7 +5,7 @@ import {BsYoutube,BsSearch,BsMic , BsFillBellFill} from 'react-icons/bs'
 
 const NavBar = () => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between mb-4'>
         <div className='flex'>
 <GiHamburgerMenu className='' size={30}/>
 <BsYoutube size={30} className='text-red-500'/>
