@@ -2,15 +2,17 @@ import React from 'react'
 import {AiFillHome, AiOutlineBulb, AiOutlineTrophy} from 'react-icons/ai'
 import {FaYoutube} from 'react-icons/fa'
 import {CgYoutube , CgMusicNote, CgLivePhoto} from 'react-icons/cg'
-import {IoLogoYoutube,IoFilmSharp} from 'react-icons/io'
+import {IoLogoYoutube} from 'react-icons/io'
 import {BiHistory, BiNews} from 'react-icons/bi'
 import {CiYoutube} from 'react-icons/ci'
 import {AiTwotoneLike} from 'react-icons/ai'
 import {MdOutlineWatchLater} from 'react-icons/md'
-import {SiTypescript,SiJavascript, SiYoutubegaming} from 'react-icons/si'
+import {SiTypescript,SiJavascript, SiYoutubegaming, SiYoutubetv, SiYoutubemusic, SiYoutubestudio} from 'react-icons/si'
 import {FaJava,FaReact} from 'react-icons/fa'
 import {GiBoltDrop, GiHanger} from 'react-icons/gi'
-
+import {IoFilmSharp} from 'react-icons/io5'
+import {BsYoutube} from 'react-icons/bs'
+import {TiSocialYoutubeCircular} from 'react-icons/ti'
 
 const SideBar = () => {
   return (
@@ -73,6 +75,7 @@ const SideBar = () => {
         </div>
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
+       
         {/* Explore  */}
         <div>
             <h1>Explore</h1>
@@ -114,26 +117,27 @@ const SideBar = () => {
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
         </div>
+        
         {/* More From YouTube  */}
         <div>
             <h1>More from YouTube</h1>
             <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<BsYoutube />
+        <h1>YouTube Premium</h1>
         </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiYoutubestudio />
+        <h1>Creator Studio</h1>
         </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiYoutubemusic />
+        <h1>YouTube Music</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<TiSocialYoutubeCircular />
+        <h1>YouTube Kids</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiYoutubetv />
+        <h1>YouTube TV</h1>
         </div>
         </div>
         <hr className='text-black text-7xl  font-bold bg-black h-1' />
