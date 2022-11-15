@@ -39,7 +39,9 @@ const SideBar = () => {
 <AiFillHome />
         <h1>Home</h1>
         </div>
+        </div>
         <hr className='text-black text-7xl font-bold' />
+        {/* Subsription  */}
         <div>
         <h1>Subscriptions</h1>
         <div className='flex'>
@@ -57,7 +59,48 @@ const SideBar = () => {
         <h1>Home</h1>
         </div>
         </div>
+        {/* Explore  */}
+        <div>
+            <h1>Explore</h1>
+            <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
         </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+        <div className='flex'>
+<AiFillHome />
+        <h1>Home</h1>
+        </div>
+
+        </div>
+        
     </div>
   )
 }
