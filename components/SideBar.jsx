@@ -1,5 +1,14 @@
 import React from 'react'
 import {AiFillHome} from 'react-icons/ai'
+import {FaYoutube} from 'react-icons/fa'
+import {CgYoutube} from 'react-icons/cg'
+import {IoLogoYoutube} from 'react-icons/io'
+import {BiHistory} from 'react-icons/bi'
+import {CiYoutube} from 'react-icons/ci'
+import {AiTwotoneLike} from 'react-icons/ai'
+import {MdOutlineWatchLater} from 'react-icons/md'
+
+
 const SideBar = () => {
   return (
     <div className='w-36 h-full'>
@@ -11,33 +20,34 @@ const SideBar = () => {
         <h1>Home</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<FaYoutube />
+        <h1>Shorts</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<CgYoutube />
+        <h1>Subsription</h1>
         </div>
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
         {/* Second Section  */}
         <div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
-        </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
-        </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
-        </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<IoLogoYoutube />
+        <h1>Library</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<BiHistory />
+        <h1>History</h1>
+        </div><div className='flex'>
+<CiYoutube />
+        <h1>Your videos</h1>
+        </div><div className='flex'>
+<MdOutlineWatchLater />
+        <h1>Watch Later</h1>
+        </div>
+        <div className='flex'>
+<AiTwotoneLike />
+        <h1>Liked Video</h1>
         </div>
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
