@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MainBar from '../components/MainBar'
 import SideBar from '../components/SideBar'
 
 export default function Home() {
@@ -10,9 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div className='flex'>
         <SideBar />
-      </main>
+        <MainBar />
+      </div>
 
     </div>
   )

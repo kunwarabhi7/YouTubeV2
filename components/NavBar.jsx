@@ -7,9 +7,9 @@ const NavBar = () => {
   return (
     <div className='flex justify-between'>
         <div className='flex'>
-<GiHamburgerMenu />
-<BsYoutube />
-<h1>YouTube <sup>IN</sup></h1>
+<GiHamburgerMenu className='' size={30}/>
+<BsYoutube size={30} className='text-red-500'/>
+<h1 className='font-bold text-2xl'>YouTube <sup className='text-gray-500 text-sm'>IN</sup></h1>
         </div>
         <div className='flex'>
 

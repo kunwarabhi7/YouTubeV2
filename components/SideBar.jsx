@@ -144,6 +144,17 @@ const SideBar = () => {
         </div>
         
         </div>
+    {/* About us  */}
+<div className='grid grid-cols-3'>
+<h1>About</h1>
+<h1>About</h1>
+<h1>About</h1>
+<h1>About</h1>
+<h1>About</h1>
+<h1>About</h1>
+<h1>About</h1>
+</div>
+<p>@ 2022 Google LLC</p>
     </div>
   )
 }
