@@ -1,19 +1,20 @@
 import React from 'react'
-import {AiFillHome} from 'react-icons/ai'
+import {AiFillHome, AiOutlineBulb, AiOutlineTrophy} from 'react-icons/ai'
 import {FaYoutube} from 'react-icons/fa'
-import {CgYoutube} from 'react-icons/cg'
-import {IoLogoYoutube} from 'react-icons/io'
-import {BiHistory} from 'react-icons/bi'
+import {CgYoutube , CgMusicNote, CgLivePhoto} from 'react-icons/cg'
+import {IoLogoYoutube,IoFilmSharp} from 'react-icons/io'
+import {BiHistory, BiNews} from 'react-icons/bi'
 import {CiYoutube} from 'react-icons/ci'
 import {AiTwotoneLike} from 'react-icons/ai'
 import {MdOutlineWatchLater} from 'react-icons/md'
-import {SiTypescript,SiJavascript} from 'react-icons/si'
+import {SiTypescript,SiJavascript, SiYoutubegaming} from 'react-icons/si'
 import {FaJava,FaReact} from 'react-icons/fa'
+import {GiBoltDrop, GiHanger} from 'react-icons/gi'
 
 
 const SideBar = () => {
   return (
-    <div className='w-36 h-full'>
+    <div className='w-48 h-full'>
         {/* Basic  */}
         <div>
 
@@ -30,7 +31,7 @@ const SideBar = () => {
         <h1>Subsription</h1>
         </div>
         </div>
-        <hr className='text-black text-7xl font-bold bg-black h-1' />
+        <hr className='text-black  bg-black h-1' />
         {/* Second Section  */}
         <div>
         <div className='flex'>
@@ -63,7 +64,7 @@ const SideBar = () => {
 <SiJavascript className='rounded-full border-yellow-500 w-6 text-yellow-500 h-5 border'/>
         <h1>Javasript</h1>
         </div><div className='flex'>
-<SiTypescript className='rounded-full border-black w-6 text-black h-5 border'/>
+<SiTypescript className='rounded-full border-cyan-900 w-6 text-cyan-900 h-5 border'/>
         <h1>TypeScript</h1>
         </div>
         <div className='flex'>
@@ -76,40 +77,40 @@ const SideBar = () => {
         <div>
             <h1>Explore</h1>
             <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<GiBoltDrop />
+        <h1>Trending</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<CgMusicNote />
+        <h1>Music</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<IoFilmSharp />
+        <h1>Films</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<CgLivePhoto />
+        <h1>Live</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiYoutubegaming />
+        <h1>Gaming</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<BiNews />
+        <h1>News</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<AiOutlineTrophy />
+        <h1>Sport</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<AiOutlineBulb />
+        <h1>Learning</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<GiHanger />
+        <h1>Fashion & beauty</h1>
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
         </div>
