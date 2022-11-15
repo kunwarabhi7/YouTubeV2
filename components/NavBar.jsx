@@ -6,17 +6,23 @@ import {BsYoutube,BsSearch,BsMic , BsFillBellFill} from 'react-icons/bs'
 const NavBar = () => {
   return (
     <div className='flex justify-between mb-4'>
+      {/* First  */}
         <div className='flex'>
 <GiHamburgerMenu className='' size={30}/>
 <BsYoutube size={30} className='text-red-500'/>
 <h1 className='font-bold text-2xl'>YouTube <sup className='text-gray-500 text-sm'>IN</sup></h1>
         </div>
+        {/* middle div   */}
         <div className='flex'>
+<div className='flex bg-black rounded-full rounded-r-none'>
 
-        <input type="text" className='border border-gray-500 rounded-full' />
-        <BsSearch />
+        <input type="text" className='border border-gray-500 rounded-full w-[30rem] text-gray-400 h-12 px-4 bg-black' placeholder='Search' />
+        <BsSearch className='text-white p-1 mx-4 ' size={30} />
+</div>
+      
         <BsMic />
         </div>
+        {/* Last Div */}
         <div className='flex'>
             <BiVideoPlus />
             <BsFillBellFill />
