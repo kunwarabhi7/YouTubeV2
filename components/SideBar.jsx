@@ -7,6 +7,8 @@ import {BiHistory} from 'react-icons/bi'
 import {CiYoutube} from 'react-icons/ci'
 import {AiTwotoneLike} from 'react-icons/ai'
 import {MdOutlineWatchLater} from 'react-icons/md'
+import {SiTypescript,SiJavascript} from 'react-icons/si'
+import {FaJava,FaReact} from 'react-icons/fa'
 
 
 const SideBar = () => {
@@ -55,18 +57,18 @@ const SideBar = () => {
         <div>
         <h1>Subscriptions</h1>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<FaJava size={20} className='rounded-full border-red-500 w-6 text-red-500 h-5 border' />
+        <h1>Learn Java</h1>
         </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiJavascript className='rounded-full border-yellow-500 w-6 text-yellow-500 h-5 border'/>
+        <h1>Javasript</h1>
         </div><div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiTypescript className='rounded-full border-black w-6 text-black h-5 border'/>
+        <h1>TypeScript</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<FaReact className='rounded-full border-blue-500 w-6 text-blue-500 h-5 border'/>
+        <h1>ReactJS</h1>
         </div>
         </div>
         <hr className='text-black text-7xl font-bold bg-black h-1' />
