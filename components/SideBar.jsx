@@ -9,10 +9,11 @@ import {AiTwotoneLike} from 'react-icons/ai'
 import {MdOutlineWatchLater} from 'react-icons/md'
 import {SiTypescript,SiJavascript, SiYoutubegaming, SiYoutubetv, SiYoutubemusic, SiYoutubestudio} from 'react-icons/si'
 import {FaJava,FaReact} from 'react-icons/fa'
-import {GiBoltDrop, GiHanger} from 'react-icons/gi'
+import {GiBoltDrop, GiHanger, GiHelp} from 'react-icons/gi'
 import {IoFilmSharp} from 'react-icons/io5'
-import {BsYoutube} from 'react-icons/bs'
+import {BsFlag, BsYoutube} from 'react-icons/bs'
 import {TiSocialYoutubeCircular} from 'react-icons/ti'
+import {RiFeedbackLine} from 'react-icons/ri'
 
 const SideBar = () => {
   return (
@@ -144,20 +145,20 @@ const SideBar = () => {
         {/* Setting  */}
         <div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<SiYoutubestudio />
+        <h1>Setting</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<BsFlag />
+        <h1>Report history</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<GiHelp />
+        <h1>Help</h1>
         </div>
         <div className='flex'>
-<AiFillHome />
-        <h1>Home</h1>
+<RiFeedbackLine />
+        <h1>Send feedback</h1>
         </div>
         
         </div>
