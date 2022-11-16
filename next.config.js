@@ -9,6 +9,9 @@ module.exports = {
       {
         hostname: 'images.unsplash.com',
       },
+      {
+        hostname: 'i.ytimg.com'   
+      }
     ],
   },
 }
