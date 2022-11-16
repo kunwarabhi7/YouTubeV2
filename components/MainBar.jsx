@@ -35,11 +35,7 @@ getData()
       <div className='grid grid-cols-4'>
       {videos.map((video)=>(
         <div key={video.id}>
-          {/* <Card image={} /> */}
-        <div>{video.snippet.title}</div>
-        <div>{video.snippet.channelTitle}</div>
-        <Image alt={video.snippet.title} src={video.snippet.thumbnails.high.url} width='40' height={40} />
-        <div>{video.snippet.publishTime}</div>
+          <Card image={video.snippet.thumbnails.high.url} title={video.snippet.title} channel={video.snippet.channelTitle} time={video.snippet.publishTime} />
         </div>
       ))}
     </div>
