@@ -26,7 +26,7 @@ const NavBar = () => {
         <div className='flex'>
             <BiVideoPlus size={25} className='text-white mt-2'/>
             <BsFillBellFill size={25} className='text-white mt-2'/>
-            <Image src='https://images.unsplash.com/photo-1504203772830-87fba72385ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80' width='20' height='4' className='rounded-full my-2 '  />
+            <Image alt='userImage' src='https://images.unsplash.com/photo-1504203772830-87fba72385ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80' width='20' height='4' className='rounded-full my-2 '  />
         </div>
 
 
