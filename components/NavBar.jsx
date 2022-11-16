@@ -2,8 +2,26 @@ import Image from 'next/image'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BiVideoPlus} from 'react-icons/bi'
 import {BsYoutube,BsSearch,BsMic , BsFillBellFill} from 'react-icons/bs'
+import { useState } from 'react';
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'ce4bc40d29msh2e1202fb5cd78c2p135054jsn28cdcf6cdac1',
+		'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+	}
+};
 
 const NavBar = () => {
+const [search , setSearch] = useState();
+
+const getResult = () => {
+  fetch('https://youtube-v31.p.rapidapi.com/search?q=rajput&part=snippet%2Cid&regionCode=US&maxResults=50&order=date', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+}
+
   return (
     <div className='flex bg-black justify-between mb-4'>
       {/* First  */}
@@ -17,7 +35,7 @@ const NavBar = () => {
 <div className='flex bg-black  rounded-full rounded-r-none'>
 
         <input type="text" className='border border-gray-500 rounded-full w-[30rem] text-gray-400 rounded-r-none h-8 px-4 bg-black' placeholder='Search' />
-        <BsSearch className='text-white p-1  border-2 -ml-[2px] border-gray-500 rounded-full rounded-l-none' size={30} />
+        <BsSearch onClick={getResult} className='text-white p-1  border-2 -ml-[2px] border-gray-500 rounded-full rounded-l-none' size={30} />
 </div>
       
         <BsMic size={25} className='mt-2 text-white' />
