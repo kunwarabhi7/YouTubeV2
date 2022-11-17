@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Card = (props) => {
-    const {image,title,channel,time} = props;
+    const {image,title,channel,time } = props;
     const date = new Date(time).toLocaleString() 
   return (
     <div className="flex-1 mr-1">
@@ -20,7 +20,7 @@ const Card = (props) => {
             <span className="w-3 h-3 text-white inline-block text-center rounded-full bg-grey-dark text-2xs">&#10003;</span>
         </p>
         <p className="mt-1 font-hairline text-xs text-grey-darker">
-            336K views &middot; {date}
+            25,000 views &middot; {date}
         </p>
         
     </div>

@@ -16,7 +16,7 @@ const NavBar = () => {
 const [search , setSearch] = useState();
 
 const getResult = () => {
-  fetch('https://youtube-v31.p.rapidapi.com/search?q=rajput&part=snippet%2Cid&regionCode=US&maxResults=50&order=date', options)
+  fetch('https://youtube-v31.p.rapidapi.com/search?q=rajput&part=snippet%2Cid&regionCode=IN&maxResults=50&order=date', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
