@@ -28,17 +28,13 @@ const {search,setSearch} = useContext(SearchContext2)
   return (
     <>
       <form onSubmit={getResult}>
-<div className='flex'>
+<div className='flex relative'>
 
          <input value={search} onChange={(e)=> setSearch(e.target.value)}  type="text" className='border border-gray-500 rounded-full w-[30rem] text-gray-400 rounded-r-none h-8 px-4 bg-black' placeholder='Search' />
-<BsSearch onClick={getResult} className='text-white p-1  border-2 -ml-[2px] border-gray-500 rounded-full rounded-l-none' size={30} />  
+<BsSearch onClick={getResult} className='absolute -top-1 -right-1 cursor-pointer text-white p-1  border-2 -ml-[2px] border-gray-500 rounded-full rounded-l-none' size={30} />  
 </div>
       </form>
-{/* {box.map((item)=>(
-    <Link key={item.videoId} href={`https://www.youtube.com/watch?v=${item.id.videoId}`}>
-    <Card  image={item.snippet.thumbnails.high.url}  title={item.snippet.title} channel={item.snippet.channelTitle} time={item.snippet.publishTime}  />
-    </Link>
-))} */}
+
   </>
   )
 }
