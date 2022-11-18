@@ -3,18 +3,24 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {BiVideoPlus} from 'react-icons/bi'
 import {BsYoutube,BsMic , BsFillBellFill} from 'react-icons/bs'
 import SearchBar from './SearchBar';
+import Link from 'next/link';
 
 
 const NavBar = () => {
 
 
   return (
-    <div className='flex bg-black justify-between mb-4'>
+    <div className='flex bg-black justify-between mb-4 '>
       {/* First  */}
         <div className='flex'>
-<GiHamburgerMenu className='text-white mr-6' size={35}/>
-<BsYoutube size={35} className='text-red-600 '/>
-<h1 className='font-bold text-3xl text-white'>YouTube <sup className='text-gray-500 text-sm'>IN</sup></h1>
+<GiHamburgerMenu className='text-white mr-6 cursor-pointer' size={35}/>
+<Link href='/'>
+<BsYoutube size={35} id='logo' className='text-black  cursor-pointer'/>
+</Link>
+
+<Link href={`https://www.youtube.com/`}>
+<h1 className='font-bold text-3xl text-white text-white'>YouTube <sup className='text-gray-500 -ml-1 text-sm'>IN</sup></h1>
+</Link>
         </div>
         {/* middle div   */}
         <div className='flex'>
