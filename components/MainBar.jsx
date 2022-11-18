@@ -33,7 +33,7 @@ getData()
 
 
     return (
-      <div className='grid grid-cols-4'>
+      <div className='grid md:grid-cols-4'>
       {videos.map((video)=>(
         <div key= {video.id}>
           <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${video.id.videoId} ` }/>
