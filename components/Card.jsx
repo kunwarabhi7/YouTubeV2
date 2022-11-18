@@ -4,7 +4,7 @@ const Card = (props) => {
     const {image,title,channel,time } = props;
     const date = new Date(time).toLocaleString() 
   return (
-    <div className="flex-1 mr-1">
+    <div className="flex-1 mr-1 ">
     <div>
         <img src={image} className='w-72' alt="image" />
     </div>
@@ -14,12 +14,12 @@ const Card = (props) => {
         </div>
 
     <div className="mb-4">
-        <h4 className="text-sm font-medium">{title}</h4>
-        <p className="mt-2 font-hairline text-sm text-grey-darker">
+        <h4 className="text-sm text-white font-medium">{title}</h4>
+        <p className="mt-2 font-hairline text-sm text-gray-500">
             {channel}
-            <span className="w-3 h-3 text-white inline-block text-center rounded-full bg-grey-dark text-2xs">&#10003;</span>
+            <span className="w-4 h-4 text-white inline-block text-center  bg-gray-400 rounded-full border-gray-400   ">&#10003;</span>
         </p>
-        <p className="mt-1 font-hairline text-xs text-grey-darker">
+        <p className="mt-1 font-hairline text-xs text-gray-400">
             25,000 views &middot; {date}
         </p>
         
