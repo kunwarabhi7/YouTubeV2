@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React,{useState,useEffect} from 'react'
 import Card from './Card';
-
+import ReactPlayer from 'react-player';
 
 
 const options = {
@@ -29,15 +29,16 @@ getData()
   },[])
   
   
+  
 
 
     return (
       <div className='grid grid-cols-4'>
       {videos.map((video)=>(
         <div key= {video.id}>
-          <Link href={`https://www.youtube.com/watch?v=${video.id.videoId}`}>
+          <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${video.id.videoId} ` }/>
           <Card image={video.snippet.thumbnails.high.url}  title={video.snippet.title} channel={video.snippet.channelTitle} time={video.snippet.publishTime} />
-          </Link>
+          
         </div>
       ))}
     </div>
