@@ -19,8 +19,8 @@ export default function Home() {
         {box.map((item) => (
           <Link
           key={item.videoId}
-          // href={`https://www.youtube.com/watch?v=${item.id.videoId}`}
-          href={`/${item.id.videoId}`}
+          href={`https://www.youtube.com/watch?v=${item.id.videoId}`}
+        
           >
             <Card
               image={item.snippet.thumbnails.high.url}
