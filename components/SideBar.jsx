@@ -17,7 +17,7 @@ import {RiFeedbackLine} from 'react-icons/ri'
 
 const SideBar = () => {
   return (
-    <div className='w-48 h-full'>
+    <div className='w-48 h-full text-white'>
         {/* Basic  */}
         <div>
 
