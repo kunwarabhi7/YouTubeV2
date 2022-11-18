@@ -5,10 +5,7 @@ const Card = (props) => {
     const date = new Date(time).toLocaleString() 
   return (
     <div className="flex-1 mr-1 ">
-    <div>
-        <img src={image} className='w-72' alt="image" />
-    </div>
-    <div className='flex '>
+    <div className='flex -mt-3 '>
         <div>
         <img src={image} className='w-8 h-6 rounded-full' alt="image" />
         </div>

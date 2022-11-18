@@ -39,10 +39,9 @@ else {
       <div className='grid md:grid-cols-4'>
       {videos.map((video)=>(
         <div key= {video.id}>
-          <Card image={video.snippet.thumbnails.high.url}  title={video.snippet.title} channel={video.snippet.channelTitle} time={video.snippet.publishTime} >
-          <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${video.id.videoId} ` }>
-          </ReactPlayer>
-            </Card>
+          <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${video.id.videoId} ` }/>
+          <Card image={video.snippet.thumbnails.high.url}  title={video.snippet.title} channel={video.snippet.channelTitle} time={video.snippet.publishTime} />
+            
         </div>
       ))}
     </div>
