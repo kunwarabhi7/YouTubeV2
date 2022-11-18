@@ -7,7 +7,7 @@ import ReactPlayer from 'react-player';
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
+    'X-RapidAPI-Key': 'ce4bc40d29msh2e1202fb5cd78c2p135054jsn28cdcf6cdac1',
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
   }
 };
