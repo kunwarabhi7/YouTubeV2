@@ -23,7 +23,7 @@ const NavBar = () => {
         <SearchBar />
 </div>
       
-        <BsMic size={25} className='mt-2 text-white' />
+        <BsMic size={25} className='mt-4 -ml-2 text-white' />
         </div>
         {/* Last Div */}
         <div className='flex'>
