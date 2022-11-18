@@ -19,7 +19,7 @@ const NavBar = () => {
 </Link>
 
 <Link href={`https://www.youtube.com/`}>
-<h1 className='font-bold text-3xl text-white text-white'>YouTube <sup className='text-gray-500 -ml-1 text-sm'>IN</sup></h1>
+<h1 className='font-bold flex md:text-3xl text-white'>YouTube <sup className='text-gray-500 md:-ml-1 text-sm'>IN</sup></h1>
 </Link>
         </div>
         {/* middle div   */}
@@ -29,10 +29,10 @@ const NavBar = () => {
         <SearchBar />
 </div>
       
-        <BsMic size={25} className='mt-4 -ml-2 text-white' />
+        <BsMic size={25} className='mt-4 hidden md:block -ml-2 text-white' />
         </div>
         {/* Last Div */}
-        <div className='flex '>
+        <div className='md:flex hidden'>
             <BiVideoPlus size={25} className='text-white mt-2'/>
             <BsFillBellFill size={25} className='text-white mt-2'/>
             <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="avatar" />
