@@ -5,7 +5,6 @@ import { SearchContext, SearchContext2 } from "../Context";
 import { useContext } from "react";
 import Card from "../components/Card";
 import Link from "next/link";
-import ReactPlayer from "react-player";
 
 export default function Home() {
   const { box, setbox } = useContext(SearchContext);
@@ -16,7 +15,7 @@ export default function Home() {
       <SideBar />
     <div>
     {
-      <div className="grid md:grid-cols-4 ml-48">
+      <div className="grid md:grid-cols-4 md:ml-48 ml-0">
         {box.map((item) => (
           <div
           key={item.id.videoId}

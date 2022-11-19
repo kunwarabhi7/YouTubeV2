@@ -27,8 +27,8 @@ import { Scrollbar } from 'react-scrollbars-custom';
 const SideBar = () => {
   return (
     
-    <div className="md:w-32 w-20  h-full fixed top-12 left-0 text-white text-sm cursor-pointer ">
-      <Scrollbar style={{ width: 150, height: 800 , msScrollbarBaseColor:"red" }}>
+    <div className="md:w-32  hidden md:flex h-full fixed top-12 left-0 text-white text-sm cursor-pointer ">
+      <Scrollbar className="hidden md:block" style={{ width: 150, height: 800 ,  }}>
       {/* Basic  */}
       <div>
         <div className="flex   hover:bg-gray-400">
