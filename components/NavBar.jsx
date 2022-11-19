@@ -12,13 +12,13 @@ const NavBar = () => {
     <div className='flex fixed -top-1 left-0 right-0 bg-black md:justify-between mb-4 '>
       {/* First  */}
         <div className='flex'>
-<GiHamburgerMenu className='text-white md:mr-6 mr-1  cursor-pointer' size={35}/>
+<GiHamburgerMenu className='text-white md:mr-6 mr-1 md:w-8 w-4  cursor-pointer' size={35}/>
 <Link href='/'>
-<BsYoutube size={30} id='logo' className='text-black  cursor-pointer'/>
+<BsYoutube size={30} id='logo' className='text-black md:w-8 w-5   cursor-pointer'/>
 </Link>
 
 <Link href='/'>
-<h1 className='font-bold flex md:text-3xl  text-white'>YouTube <sup className='text-gray-500  text-sm'>IN</sup></h1>
+<h1 className='font-bold flex md:text-3xl text-sm mt-2  text-white'>YouTube <sup className='text-gray-500 text-xs'>IN</sup></h1>
 </Link>
         </div>
         {/* middle div   */}
