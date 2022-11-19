@@ -4,7 +4,7 @@ const Card = (props) => {
     const {image,title,channel,time } = props;
     const date = new Date(time).toLocaleString() 
   return (
-    <div className="flex-1 mr-1 ">
+    <div className="flex-1 md:mr-1 mr-6 ">
         <div>
             <img src={image} alt="" className=' w-80 h-60' />
         </div>

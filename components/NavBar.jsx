@@ -19,7 +19,7 @@ const NavBar = () => {
 </Link>
 
 <Link href='/'>
-<h1 className='font-bold flex md:text-3xl text-sm text-white'>YouTube <sup className='text-gray-500 md:-ml-1 text-sm'>IN</sup></h1>
+<h1 className='font-bold flex md:text-3xl  text-white'>YouTube <sup className='text-gray-500 md:-ml-1 text-sm'>IN</sup></h1>
 </Link>
         </div>
         {/* middle div   */}
