@@ -9,7 +9,7 @@ const NavBar = () => {
 
 
   return (
-    <div className='flex fixed -top-1 left-0 right-0 bg-black md:justify-between mb-4 '>
+    <div className='flex fixed -top-1 left-0 right-0 bg-black md:justify-between mb-4 ml-4 md:ml-0'>
       {/* First  */}
         <div className='flex'>
 <GiHamburgerMenu className='text-white md:mr-6 mr-1 md:w-8 w-4  cursor-pointer' size={35}/>
