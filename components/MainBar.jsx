@@ -36,7 +36,7 @@ else {
 
   
   return (
-      <div className='grid md:grid-cols-4'>
+      <div className='grid md:grid-cols-4 ml-48'>
       {videos.map((video)=>(
         <div key= {video.id.videoId}>
           <Link href={`/${video.id.videoId}`}>

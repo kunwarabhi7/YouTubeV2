@@ -16,7 +16,7 @@ export default function Home() {
       <SideBar />
     <div>
     {
-      <div className="grid md:grid-cols-4">
+      <div className="grid md:grid-cols-4 ml-48">
         {box.map((item) => (
           <div
           key={item.id.videoId}

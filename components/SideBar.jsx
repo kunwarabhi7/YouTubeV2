@@ -21,10 +21,14 @@ import { IoFilmSharp } from "react-icons/io5";
 import { BsFlag, BsYoutube } from "react-icons/bs";
 import { TiSocialYoutubeCircular } from "react-icons/ti";
 import { RiFeedbackLine } from "react-icons/ri";
+import { Scrollbar } from 'react-scrollbars-custom';
+
 
 const SideBar = () => {
   return (
-    <div className="w-48 h-full  text-white text-sm cursor-pointer ">
+    
+    <div className="md:w-32 w-20  h-full fixed top-12 left-0 text-white text-sm cursor-pointer ">
+      <Scrollbar style={{ width: 150, height: 800 }}>
       {/* Basic  */}
       <div>
         <div className="flex   hover:bg-gray-400">
@@ -65,7 +69,7 @@ const SideBar = () => {
           <h1>Liked Video</h1>
         </div>
       </div>
-      <hr className="text-black text-7xl font-bold bg-black h-1" />
+      <hr className="text-black text-5xl font-bold bg-black h-1" />
       {/* Subsription  */}
       <div>
         <h1>Subscriptions</h1>
@@ -188,6 +192,7 @@ const SideBar = () => {
         <h1>Developer</h1>
       </div>
       <p>@ 2022 Google LLC</p>
+    </Scrollbar>
     </div>
   );
 };

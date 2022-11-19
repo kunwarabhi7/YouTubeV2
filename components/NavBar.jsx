@@ -10,7 +10,7 @@ const NavBar = () => {
 
 
   return (
-    <div className='flex bg-black justify-between mb-4 '>
+    <div className='flex fixed -top-1 left-0 right-0 bg-black justify-between mb-4 '>
       {/* First  */}
         <div className='flex'>
 <GiHamburgerMenu className='text-white mr-6 cursor-pointer' size={35}/>
