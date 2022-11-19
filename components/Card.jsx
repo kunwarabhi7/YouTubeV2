@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <div className="flex-1 md:mr-1 mr-6 ">
         <div>
-            <img src={image} alt="" className=' w-80 h-60' />
+            <img src={image} alt="" className=' w-96 md:w-80 h-60' />
         </div>
     <div className='flex -mt-3 '>
         <div>
