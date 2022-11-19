@@ -30,7 +30,7 @@ const {search,setSearch} = useContext(SearchContext2)
       <form onSubmit={getResult}>
 <div className='flex relative text-white'>
 
-         <input value={search} onChange={(e)=> setSearch(e.target.value)}  type="text" className='border text-white border-gray-500 rounded-full w-32 md:w-[30rem]  rounded-r-none h-8 md:px-4 pl-2 bg-black' placeholder='Search' />
+         <input value={search} onChange={(e)=> setSearch(e.target.value)}  type="text" className='border text-white border-gray-500 rounded-full w-40 md:w-[30rem]  rounded-r-none h-8 md:px-4 pl-2 bg-black' placeholder='Search' />
 <BsSearch onClick={getResult} className='absolute -top-1 -right-1 cursor-pointer text-white p-1  border-2 -ml-[2px] border-gray-500 rounded-full rounded-l-none' size={30} />  
 </div>
       </form>
