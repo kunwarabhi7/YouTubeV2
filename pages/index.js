@@ -19,18 +19,20 @@ export default function Home() {
       <div className="grid md:grid-cols-4">
         {box.map((item) => (
           <div
-          key={item.videoId}
+          key={item.id.videoId}
           // href={`https://www.youtube.com/watch?v=${item.id.videoId}`}
         
           >
+          <Link href={`/${item.id.videoId}`}>
 
-            <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${item.id.videoId} ` }/>
+            {/* <ReactPlayer controls width="320px" height='240px'  url={`https://www.youtube.com/watch?v=${item.id.videoId} ` }/> */}
             <Card
               image={item.snippet.thumbnails.high.url}
               title={item.snippet.title}
               channel={item.snippet.channelTitle}
               time={item.snippet.publishTime}
-            /> 
+              /> 
+              </Link>
           </div>
         ))}
       </div>

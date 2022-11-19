@@ -24,12 +24,13 @@ import { RiFeedbackLine } from "react-icons/ri";
 
 const SideBar = () => {
   return (
-    <div className="w-48 h-full text-white text-sm cursor-pointer ">
+    <div className="w-48 h-full  text-white text-sm cursor-pointer ">
       {/* Basic  */}
       <div>
         <div className="flex   hover:bg-gray-400">
           <AiFillHome />
-          <h1 className="hover:bg-gray-400">Home</h1>
+
+          <h1 className=" ">Home</h1>
         </div>
         <div className="flex">
           <FaYoutube />

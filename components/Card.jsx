@@ -5,6 +5,9 @@ const Card = (props) => {
     const date = new Date(time).toLocaleString() 
   return (
     <div className="flex-1 mr-1 ">
+        <div>
+            <img src={image} alt="" className=' w-80 h-60' />
+        </div>
     <div className='flex -mt-3 '>
         <div>
         <img src={image} className='w-8 h-6 rounded-full' alt="image" />
