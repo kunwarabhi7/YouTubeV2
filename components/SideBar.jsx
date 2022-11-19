@@ -27,8 +27,8 @@ import { Scrollbar } from 'react-scrollbars-custom';
 const SideBar = () => {
   return (
     
-    <div className="md:w-32  hidden md:flex h-full fixed top-12 left-0 text-white text-sm cursor-pointer ">
-      <Scrollbar className="hidden md:block" style={{ width: 150, height: 800 ,  }}>
+    <div className="md:w-34  hidden md:flex h-full fixed top-12  left-0  text-white cursor-pointer ">
+      <Scrollbar className="hidden md:block" style={{ width: 180, height: 800  }}>
       {/* Basic  */}
       <div>
         <div className="flex   hover:bg-gray-400">
@@ -130,34 +130,34 @@ const SideBar = () => {
           <AiOutlineBulb />
           <h1>Learning</h1>
         </div>
-        <div className="flex">
+        <div className="flex mt-2">
           <GiHanger />
-          <h1>Fashion & beauty</h1>
+          <h1 className="text-sm ">Fashion & beauty</h1>
         </div>
         <hr className="text-black text-7xl font-bold bg-black h-1" />
       </div>
 
       {/* More From YouTube  */}
-      <div>
+      <div >
         <h1>More from YouTube</h1>
         <div className="flex">
-          <BsYoutube />
-          <h1>YouTube Premium</h1>
+          <BsYoutube className="text-red-500" />
+          <h1 className="text-sm">YouTube Premium</h1>
         </div>
         <div className="flex">
-          <SiYoutubestudio />
+          <SiYoutubestudio className="text-red-500" />
           <h1>Creator Studio</h1>
         </div>
         <div className="flex">
-          <SiYoutubemusic />
+          <SiYoutubemusic className="text-red-500" />
           <h1>YouTube Music</h1>
         </div>
         <div className="flex">
-          <TiSocialYoutubeCircular />
+          <TiSocialYoutubeCircular className="text-red-500" />
           <h1>YouTube Kids</h1>
         </div>
         <div className="flex">
-          <SiYoutubetv />
+          <SiYoutubetv  className="text-red-500"/>
           <h1>YouTube TV</h1>
         </div>
       </div>
@@ -181,8 +181,10 @@ const SideBar = () => {
           <h1>Send feedback</h1>
         </div>
       </div>
+      <hr className="text-black text-7xl  font-bold bg-black h-1" />
+
       {/* About us  */}
-      <div className="grid grid-cols-3">
+      <div className="grid text-[10px] grid-cols-3">
         <h1>About</h1>
         <h1>Press</h1>
         <h1>Copyright</h1>
@@ -191,7 +193,7 @@ const SideBar = () => {
         <h1>Advertise</h1>
         <h1>Developer</h1>
       </div>
-      <p>@ 2022 Google LLC</p>
+      <p className="mb-14 mt-2 text-sm">@ 2022 Google LLC</p>
     </Scrollbar>
     </div>
   );
